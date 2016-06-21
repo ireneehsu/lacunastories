@@ -1,0 +1,332 @@
+@import "init";
+/* Hide "Operations" text in Sewing Kit */
+.vbo-views-form form div fieldset.container-inline legend span.fieldset-legend {
+  display: none;
+}
+
+/* Theme the select list for adding to a thread */
+select#edit-thread-add {
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+}
+
+/* The "Add to Thread" button for Sewing Kit */
+.view-sewing-kit {
+  fieldset.container-inline {
+    border: 0;
+  }
+  .views-widget-filter-created,
+  .views-widget-filter-created_1 {
+    display: none;
+  }
+  .fieldset-wrapper {
+    margin-left: 33%;
+  }
+  input[id^='edit-actionsewing-kit-stitch'],
+  input[id^='edit-actionviews-data-export-action-csv-export'] {
+    width: 200px;
+    display: inline-block;
+    height: 50px;
+    font-size: 14pt;
+  }
+  .chosen-container {
+    max-width: 60% !important;
+  }
+  .views-exposed-form {
+    label {
+      width: 15%;
+    }
+  }
+}
+
+/* Remove from thread view block */
+h2#stitchings {
+  text-align: center;
+}
+div#block-views-stitchings-block-1,
+div.view-stitchings {
+  margin-left: 5%;
+  margin-right: 5%;
+  .fieldset-wrapper {
+    text-align: center;
+  }
+  th.views-field-views-bulk-operations {
+    div.form-type-checkbox {
+      margin-left: 0em !important;
+      margin-right: 0em !important;
+    }
+  }
+  div.tabledrag-toggle-weight-wrapper {
+    display: none;
+  }
+  fieldset#edit-select {
+    border: none;
+    input[id^='edit-actionsewing-kit-remove'] {
+      width: auto;
+      height: 50px;
+      font-size: 14pt;
+    }
+  }
+}
+
+
+/* Center the "Select all" options */
+.vbo-fieldset-select-all {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.views-field-biblio-url {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Arrange topic view */
+.view-topics .view-content div {
+  height: 200px;
+}
+
+.views-row-odd span.views-field-field-image div.topic_image {
+  float: left;
+  padding-right: 20px;
+}
+
+div.views-row-even span.views-field-field-image div.topic_image {
+  float: right;
+  padding-left: 20px;
+}
+
+div.views-row-last span.views-field-field-image div.topic_image  {
+  float: right;
+  padding-left: 20px;
+}
+
+.views-exposed-form .views-exposed-widget{
+  clear: both;
+  width: 100%;
+}
+/*.views-exposed-form .views-exposed-widget.views-reset-button {
+  margin-top: 10px;
+  padding-top:0px;
+}*/
+.views-exposed-form .views-exposed-widget label {
+  min-width: 150px;
+}
+
+/* View-specific theming, for Materials, Responses, Threads */
+$views-link-color: #808080;
+$views-link-hover-color: #1588BA;
+.view-documents,
+.view-responses,
+.view-threads,
+.view-sewing-kit,
+.view-my-content,
+.view-all-content,
+.view-all-annotations {
+  .views-submit-button,
+  .views-widget-sort-order {
+    display: none;
+  }
+  .views-widget-sort-by {
+    //.form-type-bef-link {
+      float: left;
+      margin: 0 10px 0 15px;
+      a {
+        color: $views-link-color;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      a:hover {
+        color: $views-link-hover-color;
+      }
+    //}
+    //.form-type-bef-link.selected a {
+    //  color: $views-link-hover-color;
+    //}
+  }
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0px 0px 10px #888888;
+  }
+  .views-row {
+    float: left;
+    width: 150px;
+    margin: 20px 20px 65px 20px;
+    height: 350px;
+  }
+  .views-exposed-widget {
+    margin-top: 0px;
+  }
+  .views-exposed-widget>label,
+  .form-item-sort-by>label  {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .form-type-bef-checkbox {
+    float: left;
+    margin: 0px 5px 0px 10px;
+    font-size: 0.95em;
+    color: grey;
+  }
+  .view-content h3 {
+    display: inline-block;
+    width: 100%;
+    padding-top: 25px;
+  }
+}
+
+.view-documents #edit-reset.form-submit,
+.view-responses #edit-reset.form-submit{
+  margin-top: 0px;
+  margin-right: 80px;
+}
+.view-courses {
+  li.views-fluid-grid-item {
+    width: 32%;
+  }
+  div.views-fluid-grid h3 {
+    text-align: left;
+  }
+}
+table.views-table {
+  width: 100%;
+}
+
+.views-table tr {
+  text-align: left;
+}
+
+.view-sewing-kit,
+.view-stitchings {
+  th.views-field-category,
+  th.views-field-text,
+  th.views-field-quote,
+  th.view-field-tags {
+    text-align: center;
+  }
+  th {
+    width: 2%;
+    max-width: 5%;
+  }
+  th.views-field-text,
+  th.views-field-quote {
+      width: 10% !important;
+      min-width: 100px;
+  }
+  th.views-field-views-bulk-operations,
+  th.views-field-nothing {
+    width: 1% !important;
+  }
+  td.views-field-category {
+    text-align: center;
+  }
+  .form-item-field-annotation-reference-target-id .form-select {
+    width: 50%;
+  }
+}
+
+.view-people {
+  .views-field-name,
+  .views-field-rid {
+    text-align: center;
+  }
+  table.views-view-grid {
+    td {
+      padding-left: 25px;
+    }
+  }
+}
+
+div#block-views-bibliography-block {
+  font-family: $base-serif-font-family;
+}
+
+// This block appears on the "Curate Tags" view page
+#block-tagclouds-1 {
+  h2 {
+    padding-bottom: 25px;
+  }
+
+  // Don't display them as links
+  a.tagclouds {
+    text-decoration: none;
+    cursor: text;
+    color: black;
+  }
+}
+
+// For "Cite As" block
+div#block-views-cite-as-block {
+  padding-left: 5em;
+  padding-top: 1em;
+}
+
+.fix-width-15 {
+  width: 15%;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+// Hide the "Leave blank for all" text
+.views-widget .chosen-container + .description {
+  display: none;
+}
+
+.view-manage-enrollment {
+  fieldset#edit-select.container-inline {
+    border: none;
+    text-align: center;
+  }
+  div.vbo-select-all-markup {
+    display: none !important;
+  }
+
+  input.form-submit {
+    width: 200px;
+    display: inline-block;
+    height: 50px;
+    font-size: 18pt !important;
+  }
+  input#edit-actioncourse-registration-approve {
+
+  }
+  input#edit-actioncourse-registration-block {
+    background-color: #ba0024;
+    background-image: linear-gradient(to bottom, #ff0025, #ba0024);
+    background-repeat: repeat-x;
+  }
+  input#edit-actioncourse-registration-block:hover {
+    background-color: #ba0024;
+  }
+
+  div.view-grouping {
+    border: solid 1px lightgrey;
+    padding: 5px;
+  }
+  div.view-grouping-header {
+    font-size: large;
+  }
+  .views-field-views-bulk-operations {
+    padding-right: 25px;
+    padding-left: 5px;
+    width: 15px;
+  }
+  th.views-field-name {
+    width: 250px;
+  }
+  th.views-field-mail {
+    //width: 200px;
+  }
+  caption {
+    font-weight: bold;
+  }
+}

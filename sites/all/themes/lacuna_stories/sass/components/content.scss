@@ -1,0 +1,99 @@
+.field {
+  margin-bottom: 30px;
+}
+.field-label {
+  margin-bottom: 10px;
+}
+
+
+#comments {
+  margin-top: 40px;
+}
+#comments .title {
+  margin-top: 40px;
+}
+
+.node div.content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#signup {
+  background-image: none;
+  text-align: center;
+}
+
+/***
+ * Styling for jQuery autocomplete drop-downs in Annotator window only
+ * A bit fragile because it relies on the Tags autocomplete being the first
+ * of those UI elements to be added to the page
+ * Unsure how to add a unique id to the element that we set - MLW
+ ****/
+ul#ui-id-1.ui-autocomplete {
+  padding-top: 50px;
+}
+
+// Hide the "Username's blog" text on responses
+li.response_usernames_response {
+  display: none !important;
+}
+
+// Hide the "Text Format" stuff when creating a thread
+fieldset#edit-thread-description-format {
+  display: none;
+}
+
+/*  Styles for Response header with user information.
+*/
+
+.response-user-information {
+
+  .user-picture {
+    margin-right: 3em;
+    margin-bottom: 1em;
+    float: left;
+  }
+
+  .username-and-date {
+
+    padding-top: 70px;
+    font-family: "Arial", sans-serif;
+
+    .username {
+
+      font-size: xx-large;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      line-height: 150%;
+
+    }
+
+    .date {
+
+      font-size: large;
+
+    }
+  }
+}
+
+// Ensure that the response shows up beneath the user information
+.node-response .field-name-body {
+  padding-top: 105px;
+}
+
+// The XX reads statistic
+li.statistics_counter {
+  float: right;
+  margin-bottom: 1em;
+  margin-right: 2em;
+}
+
+#document-authors {
+  font-weight: normal;
+  font-size: .75em;
+}
+
+li.comment_forbidden {
+  margin-left: 5%;
+}
